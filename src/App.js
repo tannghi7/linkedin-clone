@@ -8,6 +8,7 @@ import Login from "./Login";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
+import Widgets from "./Widgets";
 
 function App() {
   const user = useSelector(selectUser);
@@ -45,6 +46,7 @@ function App() {
             {/* Feed */}
             <Feed />
             {/* Widgets */}
+            <Widgets />
           </div>
         </>
       )}
